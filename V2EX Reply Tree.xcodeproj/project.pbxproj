@@ -1,0 +1,584 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 110;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5A5B266F30A6E7E50017A95F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A5B266E30A6E7E50017A95F /* AppDelegate.swift */; };
+		5A5B267330A6E7E50017A95F /* Main.html in Resources */ = {isa = PBXBuildFile; fileRef = 5A5B267130A6E7E50017A95F /* Main.html */; };
+		5A5B267530A6E7E50017A95F /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 5A5B267430A6E7E50017A95F /* Icon.png */; };
+		5A5B267730A6E7E50017A95F /* Style.css in Resources */ = {isa = PBXBuildFile; fileRef = 5A5B267630A6E7E50017A95F /* Style.css */; };
+		5A5B267930A6E7E50017A95F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A5B267830A6E7E50017A95F /* SceneDelegate.swift */; };
+		5A5B267B30A6E7E50017A95F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A5B267A30A6E7E50017A95F /* ViewController.swift */; };
+		5A5B267E30A6E7E50017A95F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A5B267C30A6E7E50017A95F /* LaunchScreen.storyboard */; };
+		5A5B268130A6E7E50017A95F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A5B267F30A6E7E50017A95F /* Main.storyboard */; };
+		5A5B268930A6E7E70017A95F /* V2EX Reply Tree Extension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 5A5B268830A6E7E70017A95F /* V2EX Reply Tree Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		5A5B268E30A6E7E70017A95F /* SafariWebExtensionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A5B268D30A6E7E70017A95F /* SafariWebExtensionHandler.swift */; };
+		5A5B269030A6E7E70017A95F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5A5B268230A6E7E60017A95F /* Assets.xcassets */; };
+		5A5B269D30A6E7E70017A95F /* manifest.json in Resources */ = {isa = PBXBuildFile; fileRef = 5A5B269B30A6E7E70017A95F /* manifest.json */; };
+		5A5B269E30A6E7E70017A95F /* content.js in Resources */ = {isa = PBXBuildFile; fileRef = 5A5B269C30A6E7E70017A95F /* content.js */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5A5B268A30A6E7E70017A95F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5A5B266330A6E7E50017A95F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5A5B268730A6E7E70017A95F;
+			remoteInfo = "V2EX Reply Tree Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		5A5B269630A6E7E70017A95F /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			dstPath = "";
+			dstSubfolder = PlugIns;
+			files = (
+				5A5B268930A6E7E70017A95F /* V2EX Reply Tree Extension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		5A5B266B30A6E7E50017A95F /* V2EX Reply Tree.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "V2EX Reply Tree.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5A5B266E30A6E7E50017A95F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		5A5B267230A6E7E50017A95F /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = Base; path = Base.lproj/Main.html; sourceTree = "<group>"; };
+		5A5B267430A6E7E50017A95F /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		5A5B267630A6E7E50017A95F /* Style.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = Style.css; sourceTree = "<group>"; };
+		5A5B267830A6E7E50017A95F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		5A5B267A30A6E7E50017A95F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		5A5B267D30A6E7E50017A95F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		5A5B268030A6E7E50017A95F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5A5B268230A6E7E60017A95F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5A5B268330A6E7E60017A95F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5A5B268830A6E7E70017A95F /* V2EX Reply Tree Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "V2EX Reply Tree Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5A5B268D30A6E7E70017A95F /* SafariWebExtensionHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariWebExtensionHandler.swift; sourceTree = "<group>"; };
+		5A5B268F30A6E7E70017A95F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5A5B269B30A6E7E70017A95F /* manifest.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = manifest.json; path = Resources/manifest.json; sourceTree = "<group>"; };
+		5A5B269C30A6E7E70017A95F /* content.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; name = content.js; path = Resources/content.js; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5A5B266830A6E7E50017A95F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			files = (
+			);
+		};
+		5A5B268530A6E7E70017A95F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			files = (
+			);
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5A5B266230A6E7E50017A95F = {
+			isa = PBXGroup;
+			children = (
+				5A5B266D30A6E7E50017A95F /* V2EX Reply Tree */,
+				5A5B268C30A6E7E70017A95F /* V2EX Reply Tree Extension */,
+				5A5B266C30A6E7E50017A95F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5A5B266C30A6E7E50017A95F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5A5B266B30A6E7E50017A95F /* V2EX Reply Tree.app */,
+				5A5B268830A6E7E70017A95F /* V2EX Reply Tree Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5A5B266D30A6E7E50017A95F /* V2EX Reply Tree */ = {
+			isa = PBXGroup;
+			children = (
+				5A5B266E30A6E7E50017A95F /* AppDelegate.swift */,
+				5A5B267830A6E7E50017A95F /* SceneDelegate.swift */,
+				5A5B267A30A6E7E50017A95F /* ViewController.swift */,
+				5A5B267C30A6E7E50017A95F /* LaunchScreen.storyboard */,
+				5A5B267F30A6E7E50017A95F /* Main.storyboard */,
+				5A5B268230A6E7E60017A95F /* Assets.xcassets */,
+				5A5B268330A6E7E60017A95F /* Info.plist */,
+				5A5B267030A6E7E50017A95F /* Resources */,
+			);
+			path = "V2EX Reply Tree";
+			sourceTree = "<group>";
+		};
+		5A5B267030A6E7E50017A95F /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				5A5B267130A6E7E50017A95F /* Main.html */,
+				5A5B267430A6E7E50017A95F /* Icon.png */,
+				5A5B267630A6E7E50017A95F /* Style.css */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		5A5B268C30A6E7E70017A95F /* V2EX Reply Tree Extension */ = {
+			isa = PBXGroup;
+			children = (
+				5A5B269A30A6E7E70017A95F /* Resources */,
+				5A5B268D30A6E7E70017A95F /* SafariWebExtensionHandler.swift */,
+				5A5B268F30A6E7E70017A95F /* Info.plist */,
+			);
+			path = "V2EX Reply Tree Extension";
+			sourceTree = "<group>";
+		};
+		5A5B269A30A6E7E70017A95F /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				5A5B269B30A6E7E70017A95F /* manifest.json */,
+				5A5B269C30A6E7E70017A95F /* content.js */,
+			);
+			name = Resources;
+			path = "V2EX Reply Tree Extension";
+			sourceTree = SOURCE_ROOT;
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5A5B266A30A6E7E50017A95F /* V2EX Reply Tree */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5A5B269730A6E7E70017A95F /* Build configuration list for PBXNativeTarget "V2EX Reply Tree" */;
+			buildPhases = (
+				5A5B266730A6E7E50017A95F /* Sources */,
+				5A5B266830A6E7E50017A95F /* Frameworks */,
+				5A5B266930A6E7E50017A95F /* Resources */,
+				5A5B269630A6E7E70017A95F /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5A5B268B30A6E7E70017A95F /* PBXTargetDependency */,
+			);
+			name = "V2EX Reply Tree";
+			productName = "V2EX Reply Tree";
+			productReference = 5A5B266B30A6E7E50017A95F /* V2EX Reply Tree.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5A5B268730A6E7E70017A95F /* V2EX Reply Tree Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5A5B269330A6E7E70017A95F /* Build configuration list for PBXNativeTarget "V2EX Reply Tree Extension" */;
+			buildPhases = (
+				5A5B268430A6E7E70017A95F /* Sources */,
+				5A5B268530A6E7E70017A95F /* Frameworks */,
+				5A5B268630A6E7E70017A95F /* Resources */,
+			);
+			buildRules = (
+			);
+			name = "V2EX Reply Tree Extension";
+			productName = "V2EX Reply Tree Extension";
+			productReference = 5A5B268830A6E7E70017A95F /* V2EX Reply Tree Extension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5A5B266330A6E7E50017A95F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 2710;
+				LastUpgradeCheck = 2710;
+				TargetAttributes = {
+					5A5B266A30A6E7E50017A95F = {
+						CreatedOnToolsVersion = 27.1;
+					};
+					5A5B268730A6E7E70017A95F = {
+						CreatedOnToolsVersion = 27.1;
+					};
+				};
+			};
+			buildConfigurationList = 5A5B266630A6E7E50017A95F /* Build configuration list for PBXProject "V2EX Reply Tree" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5A5B266230A6E7E50017A95F;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 5A5B266C30A6E7E50017A95F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5A5B266A30A6E7E50017A95F /* V2EX Reply Tree */,
+				5A5B268730A6E7E70017A95F /* V2EX Reply Tree Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5A5B266930A6E7E50017A95F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			files = (
+				5A5B267530A6E7E50017A95F /* Icon.png in Resources */,
+				5A5B268130A6E7E50017A95F /* Main.storyboard in Resources */,
+				5A5B267E30A6E7E50017A95F /* LaunchScreen.storyboard in Resources */,
+				5A5B267330A6E7E50017A95F /* Main.html in Resources */,
+				5A5B269030A6E7E70017A95F /* Assets.xcassets in Resources */,
+				5A5B267730A6E7E50017A95F /* Style.css in Resources */,
+			);
+		};
+		5A5B268630A6E7E70017A95F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			files = (
+				5A5B269E30A6E7E70017A95F /* content.js in Resources */,
+				5A5B269D30A6E7E70017A95F /* manifest.json in Resources */,
+			);
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5A5B266730A6E7E50017A95F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			files = (
+				5A5B267B30A6E7E50017A95F /* ViewController.swift in Sources */,
+				5A5B266F30A6E7E50017A95F /* AppDelegate.swift in Sources */,
+				5A5B267930A6E7E50017A95F /* SceneDelegate.swift in Sources */,
+			);
+		};
+		5A5B268430A6E7E70017A95F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			files = (
+				5A5B268E30A6E7E70017A95F /* SafariWebExtensionHandler.swift in Sources */,
+			);
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5A5B268B30A6E7E70017A95F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5A5B268730A6E7E70017A95F /* V2EX Reply Tree Extension */;
+			targetProxy = 5A5B268A30A6E7E70017A95F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		5A5B267130A6E7E50017A95F /* Main.html */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5A5B267230A6E7E50017A95F /* Base */,
+			);
+			name = Main.html;
+			sourceTree = "<group>";
+		};
+		5A5B267C30A6E7E50017A95F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5A5B267D30A6E7E50017A95F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		5A5B267F30A6E7E50017A95F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5A5B268030A6E7E50017A95F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5A5B269130A6E7E70017A95F /* Debug configuration for PBXProject "V2EX Reply Tree" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 27.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		5A5B269230A6E7E70017A95F /* Release configuration for PBXProject "V2EX Reply Tree" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 27.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5A5B269430A6E7E70017A95F /* Debug configuration for PBXNativeTarget "V2EX Reply Tree Extension" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "V2EX Reply Tree Extension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "V2EX Reply Tree Extension";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.v2exreplytree.Extension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5A5B269530A6E7E70017A95F /* Release configuration for PBXNativeTarget "V2EX Reply Tree Extension" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "V2EX Reply Tree Extension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "V2EX Reply Tree Extension";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.v2exreplytree.Extension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		5A5B269830A6E7E70017A95F /* Debug configuration for PBXNativeTarget "V2EX Reply Tree" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "V2EX Reply Tree/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "V2EX Reply Tree";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+					"-framework",
+					WebKit,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.v2exreplytree;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5A5B269930A6E7E70017A95F /* Release configuration for PBXNativeTarget "V2EX Reply Tree" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "V2EX Reply Tree/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "V2EX Reply Tree";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+					"-framework",
+					WebKit,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.v2exreplytree;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5A5B266630A6E7E50017A95F /* Build configuration list for PBXProject "V2EX Reply Tree" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5A5B269130A6E7E70017A95F /* Debug configuration for PBXProject "V2EX Reply Tree" */,
+				5A5B269230A6E7E70017A95F /* Release configuration for PBXProject "V2EX Reply Tree" */,
+			);
+			defaultConfigurationName = Release;
+		};
+		5A5B269330A6E7E70017A95F /* Build configuration list for PBXNativeTarget "V2EX Reply Tree Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5A5B269430A6E7E70017A95F /* Debug configuration for PBXNativeTarget "V2EX Reply Tree Extension" */,
+				5A5B269530A6E7E70017A95F /* Release configuration for PBXNativeTarget "V2EX Reply Tree Extension" */,
+			);
+			defaultConfigurationName = Release;
+		};
+		5A5B269730A6E7E70017A95F /* Build configuration list for PBXNativeTarget "V2EX Reply Tree" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5A5B269830A6E7E70017A95F /* Debug configuration for PBXNativeTarget "V2EX Reply Tree" */,
+				5A5B269930A6E7E70017A95F /* Release configuration for PBXNativeTarget "V2EX Reply Tree" */,
+			);
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5A5B266330A6E7E50017A95F /* Project object */;
+	validationLevel = 1;
+}

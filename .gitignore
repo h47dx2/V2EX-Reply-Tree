@@ -1,0 +1,12 @@
+# macOS
+.DS_Store
+
+# Xcode build products and local settings
+build/
+DerivedData/
+*.xcuserstate
+xcuserdata/
+*.xccheckout
+*.xcscmblueprint
+.swiftpm/
+.build/

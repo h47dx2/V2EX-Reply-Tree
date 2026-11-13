@@ -1,0 +1,20 @@
+{
+  "manifest_version": 2,
+  "name": "V2EX 回复树",
+  "version": "1.0.0",
+  "description": "将 V2EX 帖子回复整理为可折叠的树形结构。",
+  "content_scripts": [
+    {
+      "matches": [
+        "https://v2ex.com/t/*",
+        "https://*.v2ex.com/t/*",
+        "http://v2ex.com/t/*",
+        "http://*.v2ex.com/t/*"
+      ],
+      "js": [
+        "content.js"
+      ],
+      "run_at": "document_idle"
+    }
+  ]
+}
