@@ -15,16 +15,18 @@
     .v2tree-toolbar button:hover { background:rgba(128,128,128,.1); }
     .v2tree-note { opacity:.65; }
     .v2tree-node { position:relative; min-width:0; }
-    .v2tree-node > .cell { overflow-wrap:anywhere; border-bottom:0; }
+    .v2tree-node > .cell { border-bottom:0; }
+    .v2tree-node .reply_content { overflow-wrap:anywhere; }
+    .v2tree-node > .cell strong, .v2tree-node > .cell .no { white-space:nowrap; }
     .v2tree-node.v2tree-root { border-bottom:1px solid rgba(128,128,128,.18); padding-bottom:8px; }
-    .v2tree-children { margin:0 12px 0 35px; border-left:2px solid rgba(128,128,128,.22); }
+    .v2tree-children { margin:0 0 0 20px; border-left:2px solid rgba(128,128,128,.22); }
     .v2tree-children.v2tree-deep { margin-left:0; margin-right:0; border-left:0; }
     .v2tree-children > .v2tree-node > .cell { padding-top:9px; padding-bottom:8px; }
     .v2tree-children > .v2tree-node > .cell:hover { background:rgba(128,128,128,.035); }
-    .v2tree-toggle { display:inline-flex; align-items:center; gap:4px; cursor:pointer; font:inherit; font-size:11px; line-height:1.4; color:inherit; opacity:.58; background:transparent; border:0; border-radius:4px; padding:2px 5px; margin-left:5px; vertical-align:middle; }
+    .v2tree-toggle { display:inline-flex; align-items:center; gap:4px; cursor:pointer; font:inherit; font-size:11px; line-height:1.4; white-space:nowrap; color:inherit; opacity:.58; background:transparent; border:0; border-radius:4px; padding:2px 5px; margin-left:5px; vertical-align:middle; }
     .v2tree-toggle:hover, .v2tree-toggle:focus-visible { opacity:1; background:rgba(128,128,128,.12); }
     .v2tree-parent { display:inline-block; font-size:11px; opacity:.55; margin-left:6px; white-space:nowrap; }
-    @media(max-width:600px) { .v2tree-children { margin-left:18px; margin-right:4px; } .v2tree-children.v2tree-deep-mobile { margin-left:0; margin-right:0; border-left:0; } .v2tree-note { width:100%; } }
+    @media(max-width:600px) { .v2tree-children { margin-left:12px; margin-right:0; } .v2tree-children.v2tree-deep-mobile { margin-left:0; margin-right:0; border-left:0; } .v2tree-note { width:100%; } }
   `;
   document.head.appendChild(style);
 
@@ -86,8 +88,8 @@
       const children = document.createElement('div');
       children.className = 'v2tree-children';
       // 限制视觉缩进，避免深层回复在窄屏上无法阅读。
-      if (depth >= 5) children.classList.add('v2tree-deep');
-      if (depth >= 3) children.classList.add('v2tree-deep-mobile');
+      if (depth >= 3) children.classList.add('v2tree-deep');
+      if (depth >= 2) children.classList.add('v2tree-deep-mobile');
       for (const child of entry.children) children.append(renderEntry(child, depth + 1));
       const update = () => {
         button.textContent = children.hidden ? `▸ ${entry.children.length} 条回复` : `▾ ${entry.children.length} 条回复`;
