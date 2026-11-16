@@ -18,7 +18,9 @@
 
 ## 油猴脚本
 
-[userscript/v2ex-reply-tree.user.js](userscript/v2ex-reply-tree.user.js) 是 1.0.0 版本。除了回复树，还包含个人信息模糊和粘贴图片上传 Imgur 的功能；它与 Safari 扩展的功能范围不同。
+[userscript/v2ex-privacy-imgur.user.js](userscript/v2ex-privacy-imgur.user.js) 保留个人信息模糊和粘贴图片上传 Imgur，使用 V2EX 自带的回复展示。
+
+[userscript/v2ex-reply-tree.user.js](userscript/v2ex-reply-tree.user.js) 是旧版脚本，另外包含回复树功能。安装新脚本后，请停用旧版，避免重复运行；如果之前设置过自定义 Imgur Client ID，请在新脚本菜单中重新设置。
 
 在支持用户脚本的浏览器中安装 Tampermonkey 等管理器，打开脚本文件并通过管理器安装，然后访问 V2EX。图片上传使用 Imgur API，可通过脚本管理器菜单设置 Imgur Client ID；上传的图片会发送到 Imgur。
 
